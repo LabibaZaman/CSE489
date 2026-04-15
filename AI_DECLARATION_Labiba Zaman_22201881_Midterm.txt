@@ -1,0 +1,68 @@
+============================================================
+           AI USAGE DECLARATION
+============================================================
+
+Name: Labiba Zaman
+Student ID: 22201881
+Assignment: Midterm
+Date: 15. 04. 2026
+
+------------------------------------------------------------
+1. AI TOOLS USED (check all that apply)
+------------------------------------------------------------
+[ ] None
+[yes] ChatGPT
+[yes] GitHub Copilot
+[yes] Google Gemini
+[ ] Claude
+[ ] Cursor
+[ ] Other: ________________
+
+------------------------------------------------------------
+2. PURPOSE OF AI USE (check all that apply)
+------------------------------------------------------------
+[yes] Learning/understanding concepts
+[yes] Debugging my code
+[ ] Generating code snippets
+[ ] Writing text content
+[ ] Design/styling ideas
+[yes] Image generation
+[ ] Other: ________________
+
+------------------------------------------------------------
+3. DESCRIPTION OF AI USE
+------------------------------------------------------------
+Briefly describe what you used AI for and how:
+
+I use AI tools when I am unable to debug my code on my own. I have been facing significant challenges with API integration, particularly when the API does not fetch data properly. In such cases, I seek step-by-step guidance and follow those instructions carefully to troubleshoot and resolve the issue.
+
+Additionally, I encountered difficulties while generating an API using an unknown key, such as a student ID, as the provided method was not working for me. For this, I sought assistance from Claude to better understand and resolve the problem.
+
+I have also experienced issues with my emulator not functioning correctly. Whenever I get stuck at any stage and cannot proceed further, I ask for guidance so that I can understand the process clearly and complete the task independently.
+
+
+------------------------------------------------------------
+4. AI-ASSISTED SECTIONS
+------------------------------------------------------------
+List specific files/sections where AI helped significantly:
+
+File: _________________ Section: _________________
+File: _________________ Section: _________________
+File: _________________ Section: _________________
+
+No specific file.
+------------------------------------------------------------
+5. DECLARATION
+------------------------------------------------------------
+I declare that:
+- This disclosure is complete and accurate
+- I understand all code in my submission
+- I can explain and modify my work if asked
+- I take full responsibility for my submission
+
+Signature: _labiba______________________
+Date: __15. 04. 2026_________________________
+
+============================================================
+Save as: docs/AI_Declaration.txt
+============================================================
