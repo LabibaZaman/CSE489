@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "60352929368",
+    "project_id": "homeo-clinic-e97fa",
+    "storage_bucket": "homeo-clinic-e97fa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:60352929368:android:035ef143dbff65e80f742d",
+        "android_client_info": {
+          "package_name": "com.example.homeo_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv6Yt62eZMmO6gqhfugJYO5fxD8OqF4Bc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
