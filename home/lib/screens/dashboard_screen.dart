@@ -1,3 +1,4 @@
+// lib/screens/dashboard_screen.dart
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../services/auth_service.dart';
@@ -8,6 +9,7 @@ import 'patients/patient_list_screen.dart';
 import 'appointments/appointment_list_screen.dart';
 import 'billing/invoice_list_screen.dart';
 import 'pharmacy/medicine_list_screen.dart';
+import 'reports_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
@@ -31,6 +33,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     const AppointmentListScreen(),
     const InvoiceListScreen(),
     const MedicineListScreen(),
+    const ReportsScreen(),
   ];
 
   final List<String> _titles = [
@@ -39,6 +42,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     'Appointments',
     'Billing',
     'Pharmacy',
+    'Reports',
   ];
 
   @override
@@ -201,6 +205,17 @@ class _DashboardScreenState extends State<DashboardScreen> {
               onTap: () {
                 setState(() {
                   _selectedIndex = 4;
+                });
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.analytics),
+              title: const Text('Reports'),
+              tileColor: _selectedIndex == 5 ? Colors.blue[50] : null,
+              onTap: () {
+                setState(() {
+                  _selectedIndex = 5;
                 });
                 Navigator.pop(context);
               },
