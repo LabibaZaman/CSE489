@@ -28,7 +28,7 @@ class AuthService {
         'createdAt': Timestamp.now(),
       });
 
-      return null; // Success
+      return null;
     } catch (e) {
       return e.toString();
     }
@@ -44,7 +44,7 @@ class AuthService {
         email: email,
         password: password,
       );
-      return null; // Success
+      return null;
     } catch (e) {
       return e.toString();
     }
@@ -68,5 +68,25 @@ class AuthService {
     } catch (e) {
       return null;
     }
+  }
+
+  // Get current user role
+  Future<String> getCurrentUserRole() async {
+    User? user = getCurrentUser();
+    if (user == null) return 'none';
+
+    Map<String, dynamic>? userData = await getUserData(user.uid);
+    return userData?['role'] ?? 'patient';
+  }
+
+  // Check if user is admin
+  Future<bool> isAdmin() async {
+    String role = await getCurrentUserRole();
+    return role == 'admin' || role == 'doctor' || role == 'receptionist';
+  }
+
+  // Get current user ID
+  String? getCurrentUserId() {
+    return _auth.currentUser?.uid;
   }
 }

@@ -19,7 +19,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
   bool _isLoading = false;
   bool _obscurePassword = true;
   bool _obscureConfirmPassword = true;
-  String _selectedRole = 'patient';
+
+  // FORCE PATIENT ROLE - Remove dropdown entirely
+  String _selectedRole = 'patient';  // Force patient role only
 
   Future<void> _register() async {
     if (_nameController.text.isEmpty ||
@@ -48,7 +50,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       email: _emailController.text.trim(),
       phone: _phoneController.text,
       password: _passwordController.text,
-      role: _selectedRole,
+      role: _selectedRole,  // Always 'patient'
     );
 
     setState(() {
@@ -152,38 +154,26 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           keyboardType: TextInputType.phone,
                         ),
                         const SizedBox(height: 15),
-                        DropdownButtonFormField<String>(
-                          value: _selectedRole,
-                          decoration: InputDecoration(
-                            labelText: 'Role',
-                            prefixIcon: const Icon(Icons.work),
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10),
-                            ),
+                        // ROLE DROPDOWN REMOVED - Patients can only register as patients
+                        // Add a note to inform users
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                          decoration: BoxDecoration(
+                            color: Colors.blue[50],
+                            borderRadius: BorderRadius.circular(10),
                           ),
-                          items: const [
-                            DropdownMenuItem(
-                              value: 'patient',
-                              child: Text('Patient'),
-                            ),
-                            DropdownMenuItem(
-                              value: 'doctor',
-                              child: Text('Doctor'),
-                            ),
-                            DropdownMenuItem(
-                              value: 'receptionist',
-                              child: Text('Receptionist'),
-                            ),
-                            DropdownMenuItem(
-                              value: 'pharmacist',
-                              child: Text('Pharmacist'),
-                            ),
-                          ],
-                          onChanged: (value) {
-                            setState(() {
-                              _selectedRole = value!;
-                            });
-                          },
+                          child: const Row(
+                            children: [
+                              Icon(Icons.info_outline, color: Colors.blue, size: 20),
+                              SizedBox(width: 8),
+                              Expanded(
+                                child: Text(
+                                  'You are registering as a Patient. Staff accounts are created by administrators only.',
+                                  style: TextStyle(fontSize: 12, color: Colors.blue),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                         const SizedBox(height: 15),
                         TextField(
