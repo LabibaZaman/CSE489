@@ -1,0 +1,61 @@
+============================================================
+           AI USAGE DECLARATION FOR PROJECT
+============================================================
+Title: Homeopathy Clinic Management System
+Name: Labiba Zaman
+Student ID: 22201881
+Assignment: Final Project
+Date: 25. 04. 2026
+
+------------------------------------------------------------
+1. AI TOOLS USED (check all that apply)
+------------------------------------------------------------
+[ ] None
+[yes] ChatGPT
+[yes] GitHub Copilot
+[ ] Google Gemini
+[ ] Claude
+[ ] Cursor
+[ ] Other: _Deepseek_______________
+
+------------------------------------------------------------
+2. PURPOSE OF AI USE (check all that apply)
+------------------------------------------------------------
+[yes] Learning/understanding concepts
+[yes] Debugging my code
+[ ] Generating code snippets
+[ ] Writing text content
+[yes] Design/styling ideas
+[ ] Image generation
+[ ] Other: ________________
+
+------------------------------------------------------------
+3. DESCRIPTION OF AI USE
+------------------------------------------------------------
+Briefly describe what you used AI for and how:
+
+AI was used ethically as a coding assistant for debugging errors (particularly Gradle configuration), UI layout suggestions, and documentation structuring. The AI served as a learning tool while I retained full responsibility for the project's architecture and core logic.
+
+
+------------------------------------------------------------
+4. AI-ASSISTED SECTIONS
+------------------------------------------------------------
+List specific files/sections where AI helped significantly: 
+build.gradle.kts
+settings.gradle.kts
+
+------------------------------------------------------------
+5. DECLARATION
+------------------------------------------------------------
+I declare that:
+- This disclosure is complete and accurate
+- I understand all code in my submission
+- I can explain and modify my work if asked
+- I take full responsibility for my submission
+
+Signature: labiba zaman_______________________
+Date: _25. 04. 26__________________________
+
+============================================================
+Save as: docs/AI_Declaration.txt
+============================================================
